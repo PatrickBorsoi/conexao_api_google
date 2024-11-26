@@ -28,7 +28,7 @@ client = gspread.authorize(creds)
 planilha_homolog = client.open(
     title=TITLE, 
     folder_id=FOLDER_ID
-    ) # abrir o arquivo 'titulo = o nome do arquivo' 'folder_id = o final do link'
+    ) # abrir o arquivo 'titulo = o nome do arquivo' 'folder_id = depois de folder/ copiar o id, na pasta onde esta o arquivo'
 
 planilha = planilha_homolog.get_worksheet(0) # selecionando a aba da planilha
 
